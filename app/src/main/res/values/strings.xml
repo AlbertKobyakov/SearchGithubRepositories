@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">GithubRepos</string>
+    <string name="enter_github_username">Enter github username</string>
+    <string name="btn_ok">OK</string>
+    <string name="edit_text_error">Error: empty request</string>
+    <string name="repository_owner_avatar">repository owner avatar</string>
+
+    <string name="request_text">&lt;b>Request:&lt;/b> %1$s</string>
+    <string name="result_text">&lt;b>Result:&lt;/b> %1$s</string>
+    <string name="repository_link">&lt;b>Link:&lt;/b> %1$s</string>
+    <string name="created_at">&lt;b>Created at:&lt;/b> %1$s</string>
+    <string name="update_at">&lt;b>Updated at:&lt;/b> %1$s</string>
+    <string name="score">&lt;b>Score:&lt;/b> %1$d</string>
+    <string name="full_name">&lt;b>Full name:&lt;/b> %1$s</string>
+    <string name="login">&lt;b>Login:&lt;/b> %1$s </string>
+    <string name="error_image">error image</string>
+    <string name="no_repos">This user has no personal repositories</string>
+    <string name="unknown">Unknown</string>
+    <string name="no_desc">No description</string>
+    <string name="user_repository">User repositories:</string>
+    <string name="vector_icon">vector icon</string>
+    <string name="list_is_empty">Repository list is empty…</string>
+    <string name="img_sad">img sad</string>
+    <string name="all_repo_loaded">All repositories is loaded</string>
+    <string name="search">Search</string>
+</resources>

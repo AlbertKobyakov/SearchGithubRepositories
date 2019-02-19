@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="logo_user_size">80dp</dimen>
+    <dimen name="logo_error_size">150dp</dimen>
+    <dimen name="repository_icon_size">35dp</dimen>
+</resources>
