@@ -2,8 +2,6 @@ package com.kobyakov.githubrepos;
 
 import android.app.Application;
 import android.os.Build;
-import android.util.Log;
-import android.widget.Toast;
 
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
@@ -16,9 +14,13 @@ import javax.net.ssl.SSLContext;
 
 public class App extends Application {
 
+    public static App INSTANCE;
+
     @Override
     public void onCreate() {
         super.onCreate();
+
+        INSTANCE = this;
 
         fixSSLExceptionOnAndroid4();
     }
