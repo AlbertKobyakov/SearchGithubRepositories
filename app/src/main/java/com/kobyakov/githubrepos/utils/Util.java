@@ -7,6 +7,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
+import java.util.TimeZone;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -24,7 +25,9 @@ public class Util {
     public static String getStrDateByCustomPattern(String strDate) {
         Date date = null;
         try {
-            date = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'", Locale.ENGLISH).parse(strDate);
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'", Locale.getDefault());
+            simpleDateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
+            date = simpleDateFormat.parse(strDate);
         } catch (ParseException e) {
             e.printStackTrace();
         }
